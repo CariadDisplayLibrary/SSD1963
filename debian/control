@@ -1,0 +1,19 @@
+Source: libdisplaycore-driver-ssd1963
+Section: libraries
+Priority: extra
+Maintainer: Matt Jenkins <matt@majenko.co.uk>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.4
+
+Package: libdisplaycore-driver-ssd1963
+Section: libraries
+Architecture: all
+XBSC-Group: DisplayCore
+XBSC-Subgroup: Drivers
+Depends: libdisplaycore-core
+Provides: SSD1963.h
+Description: SSD1963 7 inch TFT
+ Generic Chinese SSD1963 based TFT screen (800x480)
+
+
+
