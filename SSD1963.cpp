@@ -594,7 +594,7 @@ void SSD1963::fillRectangle(int x, int y, int w, int h, color_t color) {
         return;
     }
    setAddrWindow(x, y, x+w-1, y+h-1);
-   for(uint32_t i = 0; i < w * h; i++) {
+   for(int i = 0; i < w * h; i++) {
       if (NOT_A_PIN == pin_d8)
       {
          uint8_t red = (color & 0xF800) >> 8;
@@ -880,7 +880,7 @@ void SSD1963_PORTB::windowData(color_t d) {
 }
 
 void SSD1963_PORTB::windowData(color_t *d, int l) {
-    for (uint32_t x = 0; x < l; x++) {
+    for (int x = 0; x < l; x++) {
         LATB = d[x];
         port_wr->lat.clr = mask_wr;
         port_wr->lat.set = mask_wr;
