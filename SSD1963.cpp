@@ -521,8 +521,8 @@ void SSD1963::setAddrWindow(int x0, int y0, int x1, int y1) {
  
             x0 = y0a;
             x1 = y1a;
-            y0 = _width - x1a;
-            y1 = _width - x0a;
+            y0 = _width - 1 - x1a;
+            y1 = _width - 1 - x0a;
             break;
         case 2:
             x0a = x0;
@@ -530,10 +530,10 @@ void SSD1963::setAddrWindow(int x0, int y0, int x1, int y1) {
             y0a = y0;
             y1a = y1;
        
-            x0 = _width - x1a;
-            x1 = _width - x0a;
-            y0 = _height - y1a;
-            y1 = _height - y0a;
+            x0 = _width - 1 - x1a;
+            x1 = _width - 1 - x0a;
+            y0 = _height - 1 - y1a;
+            y1 = _height - 1 - y0a;
             break;
  
 
@@ -543,8 +543,8 @@ void SSD1963::setAddrWindow(int x0, int y0, int x1, int y1) {
             y0a = y0;
             y1a = y1;
 
-            x0 = _height - y1a;
-            x1 = _height - y0a;
+            x0 = _height - 1 - y1a;
+            x1 = _height - 1 - y0a;
             y0 = x0a;
             y1 = x1a;
             break;
