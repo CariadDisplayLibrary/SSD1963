@@ -702,7 +702,7 @@ void SSD1963::setRotation(int m) {
    rotation = m % 4; // can't be higher than 3
 }
 
-void SSD1963::invertDisplay(boolean i) {
+void SSD1963::invertDisplay(bool i) {
    command(i ? SSD1963_EnterInvertMode : SSD1963_ExitInvertMode);
 }
 
