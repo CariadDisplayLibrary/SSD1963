@@ -468,10 +468,14 @@ void SSD1963::initializeDevice() {
         data(fps&0X00FF);
 
         command(SSD1963_SetLShiftFreq); //PLL setting for PCLK, depends on resolution
-        // 75Hz
+//        // 85Hz
+//        data(0x0003);
+//        data(0x00f0);
+//        data(0x0000);
+        // 70Hz
         data(0x0003);
-        data(0x007a);
-        data(0x0092);
+        data(0x0030);
+        data(0x0000);
 
         // 73Hz (steady as a rock)
 //        data(0x0003);
