@@ -1,13 +1,13 @@
 #ifndef _SSD1963_H
 #define _SSD1963_H
 
-#include <DisplayCore.h>
+#include <Cariad.h>
 
 // the SSD1963 controller can be connected to the TFT screen with 18 or 24 data lines. So we need to tell the constructor which one.
 static const uint8_t TFTBUS18 = 18;
 static const uint8_t TFTBUS24 = 24;
 
-class SSD1963 : public DisplayCore {
+class SSD1963 : public Cariad {
 
     private:
 
