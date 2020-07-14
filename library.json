@@ -1,1 +1,26 @@
-{"name":"SSD1963","keywords":"display, cariad, tft, lcd, glcd, oled, graphics, font","description":"SSD1963 for Cariad","homepage":"http:\/\/cariad.org\/wiki\/index.php?title=Acorn","repository":{"type":"git","url":"https:\/\/github.com\/Cariad\/SSD1963.git"},"dependencies":[{"name":"Cariad","version":"2.1.0"}],"export":{"exclude":"debian"},"authors":{"name":"Majenko Technologies","url":"http:\/\/majenko.co.uk"},"version":"2.0.8","frameworks":"arduino","platforms":"microchippic32"}
+{
+    "name": "SSD1963",
+    "keywords": "display, cariad, tft, lcd, glcd, oled, graphics, font",
+    "description": "SSD1963 for Cariad",
+    "homepage": "https:\/\/github.com\/CariadDisplayLibrary\/SSD1963",
+    "repository": {
+        "type": "git",
+        "url": "https:\/\/github.com\/CariadDisplayLibrary\/SSD1963"
+    },
+    "dependencies": [
+        {
+            "name": "Cariad",
+            "version": "2.1.0"
+        }
+    ],
+    "export": {
+        "exclude": "debian"
+    },
+    "authors": {
+        "name": "Majenko Technologies",
+        "url": "http:\/\/majenko.co.uk"
+    },
+    "version": "2.1.1",
+    "frameworks": "arduino",
+    "platforms": "microchippic32"
+}
